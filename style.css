@@ -1,0 +1,389 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Alegreya Sans', sans-serif, 'Work Sans', 'Cairo', 'Open Sans', 'Alegreya',
+        serif;
+    line-height: 31.62px;
+    font-size: 17px;
+    color: #686868;
+    font-weight: 400;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.home{
+    font-family: 'Alegreya Sans';
+    background-image: url(images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.home .overlay{
+    position: absolute;
+    background-color: rgb(0 0 0 / 20%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home .container{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    height: 100%;
+}
+
+.home .nav-bar{
+    padding: 20px 0;
+}
+.home .nav-bar .nav-img {
+    float: left;
+}
+.home .nav-bar .nav-img img{
+    width: 180px;
+    height: 48px;
+    
+}
+.home .nav-bar .links{
+    float: right;
+}
+.home .nav-bar .links li{
+    font-family: Alegreya;
+    font-size: 18px;
+    float: left;
+    padding: 10px 15px;
+}
+.clear-fix{
+    clear: both;
+}
+.home .content{
+    margin-top: 150px;
+}
+.home .content p:first-of-type{
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.home .content h1{
+    font-family: Alegreya;
+    margin-bottom: 18px;
+    font-size:76px;
+    line-height:91.2px;
+    font-weight: 400;
+}
+.home .content .paragraf{
+    line-height:44.64px;
+    font-size: 24px;
+    max-width: 700px;
+    margin: 10px auto 20px;
+}
+.home .content .btns{
+    margin-top: 30px;
+}
+.home .content .btns .btn{
+    border-radius: 5px;
+    padding: 15px 28px;
+    color: white;
+    font-weight: 700;
+    line-height: 22.1px
+}
+.home .content .btns .btn:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+    border-color: white;
+    cursor: pointer;
+}
+.home .content .btns .btn1{
+    border: 2px solid rgb(142, 119, 84);
+    background-color: rgb(142, 119, 84);
+    
+}
+.home .content .btns .btn2{
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+.who-we-are,
+.our-location,
+.our-baking,
+.contact,
+.about{
+    padding-top: 90px;
+    padding-bottom: 60px;
+    min-width: 100%;
+}
+.our-location,
+.contact {
+    background-color: #F8F8F8;
+}
+
+.who-we-are .image,
+.who-we-are .text,
+.our-location .image,
+.our-location .text,
+.contact .content,
+.contact .map{
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+}
+.who-we-are .image,
+.our-location .text,
+.contact .content{
+    padding-right: 15px;
+}
+
+.who-we-are .text,
+.our-location .image,
+.contact .map{
+    padding-left: 15px;
+}
+.who-we-are .image .img-content,
+.who-we-are .text .content,
+.our-location .image .img-content,
+.our-location .text .content,
+.contact .content{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.who-we-are .text .content,
+.our-location .text .content,
+.contact .content{
+    padding-top: 20px;
+}
+.who-we-are .image img,
+.our-location .image img,
+.our-baking .type .image img{
+    width: 100%;
+}
+.who-we-are .text .paragraf,
+.who-we-are .text .list{
+    margin-bottom: 25px;
+}
+.headr-style{
+    font-family: Alegreya;
+    line-height: 44.16px;
+    font-weight: 400;
+    font-size: 32px;
+    color: #303030;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.who-we-are .text .paragraf p{
+    margin: 0;
+}
+
+.who-we-are .text ul li,
+.contact .list ul li{
+    margin-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.who-we-are .text ul li img{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #dfdbdb;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.who-we-are .text ul li span,
+.contact .list ul li span{
+margin-left: 10px;
+} 
+
+.our-location .text .content p:first-of-type{
+    margin-bottom: 25px;
+}
+
+.our-baking .heading{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.our-baking .heading p{
+    color: #888;
+    margin-top: 17px;
+}
+.our-baking .type{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 33%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.our-baking .type .image,
+.our-baking .type .text p,
+.contact .content .paragraf{
+    margin-bottom: 30px;
+}
+
+.our-baking .type .text h4{
+    line-height: 30.36px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.contact .content .pargraf-2{
+    margin-bottom: 20px;
+}
+.contact .list ul li img{
+    background-color: #8E7754;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #8E7754;
+    border-radius: 50%;
+    vertical-align: middle;
+        
+}
+.about{
+    background-color: #403d38;
+
+}
+.about .about-us,
+.about .why-we-are-special,
+.about .opening-hours,
+.about .contact-details{
+    display: inline-block;
+    width: 24.8%;
+    color: #969696;
+    opacity: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.about h4{
+    margin-bottom: 25px;
+    font-family: Alegreya;
+    line-height: 24.84px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.about .about-us p:first-of-type{
+    margin-bottom: 20px;
+}
+.about img{
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.about .why-we-are-special ul li:not(:last-child),
+.about .opening-hours ul li:not(:last-child)
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+}
+
+.about .contact-details .text-content:not(:last-child){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.about .contact-details .text-content img{
+    width: 35px;
+    height: 35px;
+}
+
+.about .contact-details{
+    position: relative;
+}
+.about .contact-details::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+    background-image: url(images/contact-details-map.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bottom{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: #353330;
+    text-align: center;
+}
+.bottom .footer-img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bottom .copyright{
+    margin-top: 10px;
+}
+.bottom .links{
+    margin-top: 10px;
+    padding-top: 8px;
+}
+
+.bottom .links img{
+    width: 40px;
+    height: 40px;
+    background-color: #484540;
+    border-radius: 50%;
+}
+.bottom .links img:not(:last-child){
+    margin-right: 5px;
+}
+.bottom .links img:hover{
+    cursor: pointer;
+}
+
+.home .animation{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    bottom: 5%;
+     left: 50%;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     transform: translateX(-50%);
+  }
+  
+  .home .animation::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name:  circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes circle {
+    0%{
+      top: 20%;
+      opacity: 1;
+    }
+    50%{
+      top: 50%;
+      opacity: 1;
+    }
+    100%{
+      bottom: 30%;
+      opacity: 0;
+    }
+  
+  }
